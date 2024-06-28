@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="w-full h-20 bg-red-500">
+        <a href="/">Logo</a>
+    </header>
+
+    <form action="https://example.com/contact-form" method="POST"
+    class="max-w-md mx-auto my-10 flex flex-col gap-5">
+
+        <div class="flex justify-between">
+            <label class="text-lg text-gray-900" for="full_name">Full name</label>
+            <input type="text" class="border border-gray-500 p-2" name="full_name" />
+        </div>
+        <div class="flex justify-between">
+            <label class="text-lg text-gray-900" for="email">Email</label>
+            <input type="email" class="border border-gray-500 p-2" name="email"/>
+        </div>
+        <div class="flex justify-between">
+            <label class="text-lg text-gray-900" for="message">Message</label>
+            <textarea class="border border-gray-500 p-2" rows="5" cols="20" name="message">
+            </textarea>
+        </div>
+
+        <div>
+            <button class="px-5 py-2 bg-green-600 text-white">Send</button>
+        </div>
+    </form>
+
+    <script src="./index.js"></script>
+    <script src="./fizzbuzz.js"></script>
+
+</body>
+</html>
